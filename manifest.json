@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Banner Be Gone",
+  "description": "Remove announcement banners from Jira",
+  "version": "1.0",
+  "action": {
+    "default_icon": "closed-eye.png"
+  },
+  "content_scripts": [{
+    "js": ["index.js"],
+    "matches": ["https://issues.corp.twilio.com/*"]
+  }]
+}
